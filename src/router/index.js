@@ -28,6 +28,12 @@ const router = createRouter({
       name: 'checkout',
       component: Checkout,
     },
+    {
+      path: '/order-confirmation',
+      name: 'order-confirmation',
+      component: () => import('@/views/OrderConfirmation.vue'),
+      meta: { requiresOrder: true },
+    },
   ],
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {

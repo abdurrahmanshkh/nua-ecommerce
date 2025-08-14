@@ -10,6 +10,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
+    "deploy": "npm run build && vercel --prod",
     "lint": "eslint . --fix",
     "format": "prettier --write src/"
   },
